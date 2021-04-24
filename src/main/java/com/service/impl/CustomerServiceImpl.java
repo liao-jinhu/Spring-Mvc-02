@@ -26,5 +26,9 @@ public class CustomerServiceImpl  implements CustomerService {
         return this.customerDao.addCustomer(customer);
     }
 
+    public int deleteCustomer(Integer id) {
+        return  this.customerDao.deleteCustomer(id);
+    }
+
 
 }

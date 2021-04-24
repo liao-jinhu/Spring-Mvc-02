@@ -25,7 +25,7 @@ public class CustomerController {
     }
 
 
-    // 跳转到增加书籍页面
+    // 跳转到增加客户页面
     @RequestMapping("/toaddCustomer")
     public String toAddPaper() {
         return "addCustomer";
@@ -37,5 +37,19 @@ public class CustomerController {
        customerService.addCustomer(customer);
         return "success";
     }
+
+    //跳转到删除客户页面
+    @RequestMapping("/todelete")
+    public  String toDeleteCustomer(){
+        return  "deleteCustomer";
+    }
+
+    @RequestMapping("/deleteCustomer")
+    public  String deleteCustomer(Integer id){
+        customerService.deleteCustomer(id);
+        return "success";
+    }
+
+
 
 }
