@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace=绑定一个对应的Dao/Mapper接口-->
+<mapper namespace="com.dao.CustomerDao">
+
+    <select id="findCustomerById" parameterType="Integer" resultType="Customer">
+select * from mybatis.t_customer where id=#{id}
+
+    </select>
+
+    <insert id="addCustomer" parameterType="Customer">
+        insert into mybatis.t_customer(username, jobs, phone) VALUES (#{username},#{jobs},#{phone})
+    </insert>
+
+    <delete id="deleteCustomer" parameterType="Integer">
+    delete  from mybatis.t_customer where id=#{id}
+    </delete>
+</mapper>

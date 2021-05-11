@@ -1,11 +1,11 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="Spring-Mvc-02:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/Spring_Mvc_02_war_exploded</output-path>
+  <artifact type="exploded-war" name="Test1331:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Test1331_Web_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="Spring-Mvc-02/web/Web" />
+      <element id="javaee-facet-resources" facet="Test1331/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="Spring-Mvc-02" />
+          <element id="module-output" name="Test1331" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.6.1" />
@@ -32,8 +32,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.2.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.9.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.9.RELEASE" />
+          <element id="library" level="application" name="vue" />
         </element>
-        <element id="module-output" name="Spring-Mvc-02" />
+        <element id="module-output" name="Test1331" />
       </element>
     </root>
   </artifact>
